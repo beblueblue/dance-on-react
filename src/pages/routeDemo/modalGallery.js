@@ -1,0 +1,166 @@
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useHistory,
+  useLocation,
+  useParams
+} from "react-router-dom";
+
+export default function App() {
+  return (
+    <Router>
+      <ModalSwitch />
+    </Router>
+  )
+}
+
+const IMAGES = [
+  { id: 0, title: "Dark Orchid", color: "DarkOrchid" },
+  { id: 1, title: "Lime Green", color: "LimeGreen" },
+  { id: 2, title: "Tomato", color: "Tomato" },
+  { id: 3, title: "Seven Ate Nine", color: "#789" },
+  { id: 4, title: "Crimson", color: "Crimson" }
+];
+
+function ModalSwitch() {
+  let location = useLocation();
+
+  // 在弹窗点击时，将旧有location赋值到background，同时触发新路由
+  let background = location.state && location.state.background;
+
+  return (
+    <div>
+      <Switch location={background || location}>
+        <Route exact path="/" children={<Home />} />
+        <Route exact path="/gallery" children={<Gallery />} />
+        <Route exact path="/img/:id" children={<ImageView />} />
+      </Switch>
+
+      {background && <Route path="/img/:id" children={<Modal />} />}
+    </div>
+  )
+}
+
+function Home() {
+  return (
+    <div>
+      <Link to="/gallery">Visit the Gallery</Link>
+
+      <h2>Featured Images</h2>
+
+      <ul>
+        <li>
+          <Link to="/img/2">Tomato</Link>
+        </li>
+        <li>
+          <Link to="/img/4">Crimson</Link>
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+function Gallery() {
+  let location = useLocation();
+
+  return (
+    <div>
+      {IMAGES.map(i => (
+        <Link 
+          key={i.id}
+          to={{
+            pathname: `/img/${i.id}`,
+            state: { background: location }
+          }}
+        >
+          <Thumbnail color={i.color} />
+          <p>{i.title}</p>
+        </Link>
+      ))}
+    </div>
+  )
+}
+
+function Thumbnail({ color }) {
+  return (
+    <div
+      style={{
+        width: 50,
+        height: 50,
+        background: color
+      }}
+    />
+  );
+}
+
+function ImageView() {
+  let { id } = useParams();
+  let image = IMAGES[parseInt(id, 10)];
+
+  if (!image) return <div>Image not found</div>;
+
+  return (
+    <div>
+      <h1>{image.title}</h1>
+      <Image color={image.color} />
+    </div>
+  );
+}
+
+function Modal() {
+  let history = useHistory();
+  let { id } = useParams();
+  let img = IMAGES[parseInt(id, 10)];
+
+  if(!img) return false;
+
+  let back = e => {
+    e.stopPropagation();
+    history.goBack();
+  }
+
+  return (
+    <div
+      onClick={back}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        background: "rgba(0, 0, 0, 0.15)"
+      }}
+    >
+      <div
+        className="modal"
+        style={{
+          position: "absolute",
+          background: "#fff",
+          top: 25,
+          left: "10%",
+          right: "10%",
+          padding: 15,
+          border: "2px solid #444"
+        }}
+      >
+        <h1>{img.title}</h1>
+        <Image color={img.color} />
+        <button type="button" onClick={back}>Close</button>
+      </div>
+    </div>
+  )
+}
+function Image({ color }) {
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: 400,
+        background: color
+      }}
+    />
+  );
+}
