@@ -29,7 +29,7 @@ const routes = [
   }
 ];
 
-export default function App() {
+export default function RouteConfig() {
   return (
     <Router>
       <div>

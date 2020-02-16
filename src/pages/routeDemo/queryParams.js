@@ -5,7 +5,7 @@ import {
   useLocation
 } from "react-router-dom";
 
-export default function App() {
+export default function QueryParams() {
   return (
     <Router>
       <QueryParamsDemo />

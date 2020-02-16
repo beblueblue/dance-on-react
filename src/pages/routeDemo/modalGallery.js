@@ -9,7 +9,7 @@ import {
   useParams
 } from "react-router-dom";
 
-export default function App() {
+export default function ModalGallery() {
   return (
     <Router>
       <ModalSwitch />

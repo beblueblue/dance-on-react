@@ -14,7 +14,7 @@ import {
   useParams
 } from "react-router-dom";
 
-export default function App() {
+export default function Animated() {
   return (
     <Router>
       <Switch>

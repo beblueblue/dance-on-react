@@ -7,7 +7,7 @@ import {
   Prompt,
 } from 'react-router-dom';
 
-export default function App() {
+export default function Preventing() {
   return (
     <Router>
       <div>

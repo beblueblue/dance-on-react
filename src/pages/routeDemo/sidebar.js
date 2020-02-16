@@ -25,7 +25,7 @@ const routes = [
   }
 ];
 
-export default function App() {
+export default function SideBar() {
   return (
     <Router>
       <div style={{display: 'flex'}}>

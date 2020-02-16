@@ -22,7 +22,7 @@ import { StaticRouter as Router, Route } from "react-router-dom";
 //
 // app.listen(process.env.PORT || 3000);
 
-export default class App extends React.Component {
+export default class StaticRoute extends React.Component {
   staticContext = {};
 
   render() {

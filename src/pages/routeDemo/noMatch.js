@@ -8,7 +8,7 @@ import {
   useLocation,
 } from 'react-router-dom';
 
-export default function App() {
+export default function NoMatch() {
   return (
     <Router>
       <div>
@@ -37,7 +37,7 @@ export default function App() {
             <WillMatch />
           </Route>
           <Route path="*">
-            <NoMatch />
+            <NoToBeMatch />
           </Route>
         </Switch>
       </div>
@@ -53,7 +53,7 @@ function WillMatch() {
   return <h3>Matched!</h3>;
 }
 
-function NoMatch() {
+function NoToBeMatch() {
   let location = useLocation();
   return (
     <div>
