@@ -1,68 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 在 React 上起舞
+&emsp;&emsp;此仓库用于存放 React 学习过程中的各种 demo 代码
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# 项目搭建
+&emsp;&emsp;利用 create-react-app 来初始化项目  
+_&emsp;&emsp;create-react-app: [文档地址](https://www.html.cn/create-react-app/docs/getting-started/)_
+ 
+# Demo 目录
+| 序号 | 名称 | 地址 | 学习文档 | 状态 |
+| :- | :- | :- | :- | :- |
+| 1 | React 基础概念 | 无 | [React 入门笔记](http://note.youdao.com/noteshare?id=8545e08c365c3c9984166dbbf7f98725) | _已完成_ |
+| 2 | React 高级特性：高阶组件 _HOC_ | 无 | [React 高级概念笔记](http://note.youdao.com/noteshare?id=45cd8c8fe3436158bade7d888af630b8) | _已完成_ |
+| 3 | React 高级特性：_Context_ | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/contextDemo) | [React 高级概念笔记](http://note.youdao.com/noteshare?id=45cd8c8fe3436158bade7d888af630b8) | _已完成_ |
+| 4 | 路由：_react-router-dom_ | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/routeDemo) | [React 路由笔记](http://note.youdao.com/noteshare?id=4fbc5e42a19d359b23e1d295b647f5c5) | 进行中：笔记待补充 |
+| 5 | 单元测试：_Enzyme_ | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/priceDemo) | [单元测试 - Enzyme 笔记](http://note.youdao.com/noteshare?id=84e434ccb86be0cac49869da8f786054) | 进行中 |
