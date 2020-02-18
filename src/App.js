@@ -1,9 +1,9 @@
 import React from 'react'
-import UseThemeContext from './pages/contextDemo/UseThemeContext'
+import PriceDemo from './pages/priceDemo/index'
 
 function App() {
   return (
-    <UseThemeContext />
+    <PriceDemo />
   )
 }
 
