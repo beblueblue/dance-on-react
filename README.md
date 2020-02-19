@@ -12,4 +12,5 @@ _&emsp;&emsp;create-react-app: [文档地址](https://www.html.cn/create-react-a
 | 2 | `React` 高级特性：高阶组件 `HOC` | 无 | [React 高级概念笔记](http://note.youdao.com/noteshare?id=45cd8c8fe3436158bade7d888af630b8) | _已完成_ |
 | 3 | `React` 高级特性：`Context` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/contextDemo) | [React 高级概念笔记](http://note.youdao.com/noteshare?id=45cd8c8fe3436158bade7d888af630b8) | _已完成_ |
 | 4 | 路由：`react-router-dom` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/routeDemo) | [`React` 路由笔记](http://note.youdao.com/noteshare?id=4fbc5e42a19d359b23e1d295b647f5c5) | 进行中：笔记待补充 |
-| 5 | 单元测试：_Enzyme_ | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/priceDemo) | [单元测试 - `Enzyme` 笔记](http://note.youdao.com/noteshare?id=84e434ccb86be0cac49869da8f786054) | 进行中 |
+| 5 | 数据状态管理：`MobX` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/mobxDemo) | 无 | 进行中 |
+| 6 | 单元测试：`Enzyme` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/priceDemo) | [单元测试 - `Enzyme` 笔记](http://note.youdao.com/noteshare?id=84e434ccb86be0cac49869da8f786054) | 进行中 |
