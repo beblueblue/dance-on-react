@@ -1,12 +1,13 @@
 import React from 'react'
-import TodoList from './pages/mobxDemo/todoList'
-import TodoListView from './pages/mobxDemo/containers/TodoList'
-
-const store = new TodoList()
+import appState from './pages/mobxDemo/containers/appState'
+import TimerView from './pages/mobxDemo/containers/TimerView'
 
 function App() {
   return (
-    <TodoListView todoList={store} />
+    <>
+      <TimerView appState={appState} />
+      <TimerView appState={appState} />
+    </>
   )
 }
 
