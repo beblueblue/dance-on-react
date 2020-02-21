@@ -14,4 +14,5 @@ _&emsp;&emsp;create-react-app: [文档地址](https://www.html.cn/create-react-a
 | 4 | 路由：`react-router-dom` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/routeDemo) | [`React` 路由笔记](http://note.youdao.com/noteshare?id=4fbc5e42a19d359b23e1d295b647f5c5) | 更新中：笔记待补充 |
 | 5 | 数据状态管理：`MobX` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/mobxDemo) | [`Mobx` 入门笔记](http://note.youdao.com/noteshare?id=32e5f20cb446c92a4864172547ce31f1) | 更新中 |
 | 6 | 单元测试：`Enzyme` | [Demo 代码](https://github.com/beblueblue/danceOnReact/tree/master/src/pages/priceDemo) | [单元测试 - `Enzyme` 笔记](http://note.youdao.com/noteshare?id=84e434ccb86be0cac49869da8f786054) | 更新中 |
-| 7 | 项目配置：`create-react-app` | 无 | [项目配置 - `create-react-app` 笔记](http://note.youdao.com/noteshare?id=c5763372acaa7e0f473e59fb240365fe) | 更新中 |
+| 7 | 单元测试：`Jest` | 无 | [单元测试 - `Jest` 笔记](http://note.youdao.com/noteshare?id=c5763372acaa7e0f473e59fb240365fe) | 更新中 |
+| 8 | 项目配置：`create-react-app` | 无 | [项目配置 - `create-react-app` 笔记](http://note.youdao.com/noteshare?id=c5763372acaa7e0f473e59fb240365fe) | 更新中 |
