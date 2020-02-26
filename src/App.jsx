@@ -1,14 +1,11 @@
-import React from 'react'
-import appState from './pages/mobxDemo/containers/appState'
-import TimerView from './pages/mobxDemo/containers/TimerView'
+import React, { Component } from 'react';
+import Lazy from './pages/codeSplitDemo/contrainer/Lazy'
 
-function App() {
-  return (
-    <>
-      <TimerView appState={appState} />
-      <TimerView appState={appState} />
-    </>
-  )
+class App extends Component {
+  render() {
+    return (
+      <Lazy />
+    );
+  }
 }
-
 export default App;
