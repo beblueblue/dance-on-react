@@ -1,24 +1,18 @@
-import { observable, computed, action } from 'mobx';
-import { names } from './names';
+import { observable, computed } from 'mobx';
 
 class WithComputedViewModel {
   @observable 
-  vmProps: object;
+  props: object;
 
   constructor(props){
-    this.vmProps = props;
+    this.props = props;
   }
 
   @computed
   get fullName() {
     console.log('computed fullName');
-    const { firstName, lastName } = names[this.vmProps.lan]
+    const { firstName, lastName } = this.props
     return `${firstName} · ${lastName}`;
-  }
-
-  @action.bound
-  toggleLan() {
-    this.vmProps.lan = this.vmProps.lan === 'en' ? 'ch' : 'en';
   }
 }
 

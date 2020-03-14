@@ -4,8 +4,8 @@ const names = {
     lastName: 'Hugh'
   },
   ch: {
-    firstName: '沉淀',
-    lastName: '蓝色'
+    firstName: '蓝色',
+    lastName: '沉淀'
   }
 }
 
