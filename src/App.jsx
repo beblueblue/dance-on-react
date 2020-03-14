@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import Lazy from './pages/codeSplitDemo/contrainer/Lazy'
+import React from 'react';
+import Demo from './pages/mobxDemo/containers/useVM'
 
-class App extends Component {
-  render() {
-    return (
-      <Lazy />
-    );
-  }
+function App() {
+  return (
+    <Demo />
+  );
 }
 export default App;
